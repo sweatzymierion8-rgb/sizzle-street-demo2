@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111111">
+<meta name="description" content="Sizzle Street Food Truck — bold street food, fresh ingredients, and good vibes.">
+<title>Sizzle Street Food Truck | Good Food. Big Vibes.</title>
+<style>
+:root{--bg:#101112;--panel:#191b1d;--ink:#f8f6ef;--muted:#b9b8b1;--gold:#ffc928;--gold2:#f4a900;--line:#343638}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}.wrap{width:min(1100px,92%);margin:auto}.topbar{position:sticky;top:0;z-index:10;background:#101112ed;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}.brand{font-weight:900;letter-spacing:.04em;text-decoration:none;font-size:1.05rem}.brand span{color:var(--gold)}.navlinks{display:flex;gap:20px}.navlinks a{text-decoration:none;color:var(--muted);font-size:.93rem}.navlinks a:hover{color:var(--gold)}.menu-toggle{display:none;background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:9px;padding:8px 11px;font-size:1.2rem}.hero{position:relative;overflow:hidden;min-height:500px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(8,9,10,.96) 0%,rgba(8,9,10,.78) 48%,rgba(8,9,10,.2) 100%),url('https://images.unsplash.com/photo-1565123409695-7b5ef63a7f5b?auto=format&fit=crop&w=1800&q=85') center/cover}.hero-content{padding:78px 0;max-width:650px}.eyebrow{color:var(--gold);font-weight:800;letter-spacing:.15em;text-transform:uppercase;font-size:.8rem}.hero h1{font-size:clamp(2.7rem,8vw,5.5rem);line-height:.98;letter-spacing:-.05em;margin:16px 0}.hero p{font-size:1.12rem;color:#e4e2db;max-width:520px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;padding:13px 21px;font-weight:850;text-decoration:none;cursor:pointer;background:var(--gold);color:#171717}.btn:hover{background:#ffda60;transform:translateY(-1px)}.btn.secondary{background:transparent;border:1px solid #777;color:var(--ink)}section{padding:70px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:25px}.section-head h2{font-size:clamp(2rem,5vw,3rem);line-height:1.05;margin:0;letter-spacing:-.04em}.section-head p{color:var(--muted);max-width:430px;margin:0}.menu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.food-card{background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden}.food-card img{width:100%;height:220px;object-fit:cover;display:block}.food-info{padding:19px}.food-title{display:flex;justify-content:space-between;gap:12px;align-items:start}.food-title h3{margin:0;font-size:1.2rem}.price{color:var(--gold);font-weight:900;white-space:nowrap}.food-info p{color:var(--muted);margin:8px 0 0}.note{color:var(--muted);font-size:.85rem;margin-top:16px}.banner{background:var(--gold);color:#181818;border-radius:22px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:24px}.banner h2{margin:0 0 6px;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.1}.banner p{margin:0;max-width:600px}.btn.dark{background:#171717;color:white;flex-shrink:0}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.about-photo{width:100%;height:360px;object-fit:cover;border-radius:20px}.about-copy h2{font-size:clamp(2rem,5vw,3rem);line-height:1.05;margin:10px 0 18px}.about-copy p{color:var(--muted)}.details{display:grid;gap:14px;margin-top:22px}.detail{display:flex;gap:12px}.detail strong{display:block}.detail span{color:var(--muted)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:25px}.panel h3{margin-top:0;font-size:1.4rem}.field{display:grid;gap:7px;margin-bottom:14px}.field label{font-weight:700;font-size:.92rem}.field input,.field textarea,.field select{width:100%;border-radius:10px;border:1px solid #4a4b4c;background:#101112;color:var(--ink);padding:12px 13px;font:inherit}.field textarea{min-height:110px;resize:vertical}.field input:focus,.field textarea:focus{outline:2px solid var(--gold);outline-offset:2px}.form-note{font-size:.84rem;color:var(--muted)}.status{margin-top:12px;color:var(--gold);font-weight:700}.footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:.9rem}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.socials{display:flex;gap:14px}.socials a{color:var(--gold);text-decoration:none}.smallcaps{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);font-weight:850}
+@media(max-width:700px){.navlinks{display:none;position:absolute;top:64px;left:0;right:0;background:#101112;padding:18px 4%;border-bottom:1px solid var(--line);flex-direction:column;gap:14px}.navlinks.open{display:flex}.menu-toggle{display:block}.hero{min-height:520px;background-position:58% center}.hero-content{padding:66px 0}.menu-grid,.two-col,.contact-grid{grid-template-columns:1fr}.food-card img{height:210px}.section-head{align-items:start;flex-direction:column}.banner{align-items:start;flex-direction:column}.about-photo{height:270px}section{padding:54px 0}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#home">🔥 SIZZLE <span>STREET</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="navlinks" id="navLinks" aria-label="Main navigation">
+      <a href="#menu">Menu</a><a href="#about">Our Story</a><a href="#find-us">Find Us</a><a href="#contact">Book Us</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-content">
+    <div class="eyebrow">Street food • Big flavor • Good vibes</div>
+    <h1>GOOD FOOD.<br>BIG VIBES.</h1>
+    <p>Fresh off the truck and made to bring people together. Pull up hungry — leave happy.</p>
+    <div class="actions"><a class="btn" href="#menu">Explore the Menu ↓</a><a class="btn secondary" href="#find-us">Find the Truck</a></div>
+  </div>
+</section>
+<section id="menu">
+  <div class="wrap">
+    <div class="section-head"><div><div class="smallcaps">Made fresh to order</div><h2>THE CROWD FAVORITES</h2></div><p>Big flavor, generous portions, and a little bit of heat. Ask us about today's specials.</p></div>
+    <div class="menu-grid">
+      <article class="food-card"><img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=900&q=80" onerror="this.src='https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=900&q=80'" alt="Street tacos on a plate"><div class="food-info"><div class="food-title"><h3>Street Tacos</h3><span class="price">$10</span></div><p>Three warm tortillas, seasoned filling, fresh salsa, and a squeeze of lime.</p></div></article>
+      <article class="food-card"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=85" alt="Crispy loaded fries"><div class="food-info"><div class="food-title"><h3>Loaded Street Fries</h3><span class="price">$8</span></div><p>Crispy fries topped with house sauce, cheese, and your choice of protein.</p></div></article>
+      <article class="food-card"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85" alt="Cheeseburger with lettuce and tomato"><div class="food-info"><div class="food-title"><h3>Smash Burger</h3><span class="price">$11</span></div><p>Smashed beef, melty cheese, pickles, and our signature street sauce.</p></div></article>
+      <article class="food-card"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=900&q=85" alt="Colorful refreshing drinks"><div class="food-info"><div class="food-title"><h3>Fresh Coolers</h3><span class="price">$4</span></div><p>Bright, refreshing fruit drinks to cool things down.</p></div></article>
+    </div>
+    <p class="note">Demo menu and prices — replace these with the restaurant's actual menu before publishing for a client.</p>
+  </div>
+</section>
+<section>
+  <div class="wrap"><div class="banner"><div><div class="smallcaps" style="color:#171717">Got a gathering?</div><h2>BRING THE TRUCK TO YOUR EVENT.</h2><p>Birthdays, office lunches, school events, and neighborhood parties. Tell us what you're planning.</p></div><a class="btn dark" href="#contact">Ask About Catering →</a></div></div>
+</section>
+<section id="about">
+  <div class="wrap two-col">
+    <img class="about-photo" src="https://images.unsplash.com/photo-1565123409695-7b5ef63a7f5b?auto=format&fit=crop&w=1100&q=85" alt="Food truck at an outdoor event">
+    <div class="about-copy"><div class="smallcaps">A little about us</div><h2>GOOD PEOPLE.<br>GREAT STREET FOOD.</h2><p>Sizzle Street is a sample food truck brand built around fresh ingredients, bold flavors, and friendly service. We believe the best meals are the ones shared with your people.</p><p>For a real client, replace this section with their true story, team photo, and what makes their food special.</p><a class="btn" href="#find-us">Come Say Hi</a></div>
+  </div>
+</section>
+<section id="find-us">
+  <div class="wrap">
+    <div class="section-head"><div><div class="smallcaps">Catch us around town</div><h2>FIND THE TRUCK</h2></div><p>Follow along for this week's stops, pop-ups, and last-minute location updates.</p></div>
+    <div class="contact-grid">
+      <div class="panel"><h3>📍 This Week's Stops</h3><div class="details">
+        <div class="detail"><div>📅</div><div><strong>Wednesday · 11 AM–2 PM</strong><span>Downtown lunch stop — demo location</span></div></div>
+        <div class="detail"><div>📅</div><div><strong>Friday · 5 PM–9 PM</strong><span>Community market — demo location</span></div></div>
+        <div class="detail"><div>📅</div><div><strong>Saturday · 12 PM–6 PM</strong><span>Local food truck meetup — demo location</span></div></div>
+      </div><p class="form-note">Sample schedule only. Update with verified locations and hours for a real business.</p></div>
+      <div class="panel"><h3>Stay in the Loop</h3><p style="color:var(--muted)">Follow our socials for location updates and specials.</p><div class="actions"><a class="btn" href="#contact">Get in Touch</a><a class="btn secondary" href="#menu">View Menu</a></div><p class="form-note">Add the client's real Instagram, Facebook, or TikTok links before launch.</p></div>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head"><div><div class="smallcaps">Let's make it happen</div><h2>BOOK THE TRUCK</h2></div><p>Tell us about your event and we'll follow up. This demo form opens your email app to send the inquiry.</p></div>
+    <div class="contact-grid">
+      <div class="panel"><h3>Event inquiry</h3>
+        <form id="bookingForm">
+          <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required placeholder="Name"></div>
+          <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div>
+          <div class="field"><label for="date">Event date</label><input id="date" name="date" type="date"></div>
+          <div class="field"><label for="details">Tell us about your event</label><textarea id="details" name="details" required placeholder="Location, guest count, type of event..."></textarea></div>
+          <button class="btn" type="submit">Create Email Inquiry →</button>
+          <p class="form-note">Demo note: replace the sample email in the code with the client's real email. The form does not store submissions.</p>
+          <p class="status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+      <div class="panel"><h3>Contact details</h3><div class="details">
+        <div class="detail"><div>☎️</div><div><strong>Call or text</strong><span>(555) 010-2020 — demo number</span></div></div>
+        <div class="detail"><div>✉️</div><div><strong>Email</strong><span>hello@example.com — demo address</span></div></div>
+        <div class="detail"><div>📍</div><div><strong>Service area</strong><span>Your town and surrounding areas</span></div></div>
+      </div><p class="note">All contact details are placeholders. Never publish fake contact information for a real business.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><div><strong>🔥 SIZZLE STREET</strong><br>© <span id="year"></span> Sizzle Street Food Truck · Demo website</div><div class="socials"><a href="#home">Home</a><a href="#menu">Menu</a><a href="#contact">Contact</a></div></div></footer>
+<script>
+const toggle=document.getElementById('menuToggle'),links=document.getElementById('navLinks');
+toggle.addEventListener('click',()=>{const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'✕':'☰';});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';}));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('bookingForm').addEventListener('submit',e=>{e.preventDefault();const f=e.currentTarget;const name=document.getElementById('name').value.trim(),email=document.getElementById('email').value.trim(),date=document.getElementById('date').value||'Not specified',details=document.getElementById('details').value.trim();const subject=encodeURIComponent('Food truck event inquiry from '+name);const body=encodeURIComponent('Name: '+name+'\nEmail: '+email+'\nEvent date: '+date+'\n\nEvent details:\n'+details);document.getElementById('formStatus').textContent='Opening your email app…';window.location.href='mailto:hello@example.com?subject='+subject+'&body='+body;});
+</script>
+</body>
+</html>
